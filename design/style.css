@@ -4,8 +4,8 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   background-image:  url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-color: hsl(185, 75%, 39%);
-  background-position-x: 122%, 50%;
-  background-position-y: 153%, 50%;
+  background-position-x: 122%, -36%;
+  background-position-y: 153%, -33%;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -18,6 +18,8 @@ body {
 .card {
   background-color: white;
   width: 80%;
+  max-width: 400px;
+  min-width: 200px;
   height: 50vh;
   border-radius: 10px;
 }
@@ -78,4 +80,10 @@ body {
   flex-direction: column;
   align-self: center;
   text-align: center;
+}
+@media (min-width:768px) {
+  body {
+    background-position-x: -20vw, 850px;
+    background-position-y: -450px, 250px;
+  }
 }
